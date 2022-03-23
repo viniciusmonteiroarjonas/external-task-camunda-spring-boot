@@ -1,0 +1,15 @@
+server.port: 8081
+
+camunda.bpm.client:
+  base-url: http://localhost:8080/engine-rest # URL apontando para o cockpit
+  lock-duration: 1000 # define quantos milissegundos as Tarefas Externas ficam bloqueadas até que possam ser buscadas novamente
+
+logging.level.org.camunda.bpm.client: DEBUG
+
+url:
+  consulta:
+    cep: https://viacep.com.br/ws/
+
+path:
+  consulta:
+    cep: /{cep}/json
